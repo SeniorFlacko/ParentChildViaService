@@ -30,4 +30,9 @@ export class AstronautComponent implements OnInit {
     this.missionService.confirmMission(this.astronaut);
   }
 
+  cancelar() {
+    this.confirmed = false;
+    this.missionService.cancelMission(this.astronaut);
+  }
+
 }

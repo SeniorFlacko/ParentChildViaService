@@ -4,4 +4,6 @@
   <button (click)="confirm()" [disabled]="!announced || confirmed">
     Confirm
   </button>
+
+  <button (click)="cancelar()" [disabled]="!(announced || confirmed)"> Cancelar </button>
 </p>

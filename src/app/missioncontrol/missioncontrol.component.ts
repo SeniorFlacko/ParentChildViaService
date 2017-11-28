@@ -18,7 +18,9 @@ export class MissioncontrolComponent implements OnInit {
     missionService.missionCondfirmed$.subscribe(astronaut => {
       this.history.push(`${ astronaut } confirmed the mission `);
     });
-
+    missionService.missionCancel$.subscribe(astronaut => {
+      this.history.push(`${ astronaut } cancel the mission `);
+    });
   }
 
   ngOnInit() {
